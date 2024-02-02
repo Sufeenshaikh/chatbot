@@ -1,0 +1,6 @@
+framework module Pods_chatbotApi {
+  umbrella header "Pods-chatbotApi-umbrella.h"
+
+  export *
+  module * { export * }
+}

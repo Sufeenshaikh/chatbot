@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="youCell" rowHeight="104" id="KGk-i7-Jjw" customClass="youTableViewCell" customModule="chatbotApi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6WO-kw-LI2">
+                        <rect key="frame" x="64" y="10" width="310" height="84"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter through the back door. Come at 7 PM." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iab-o2-rNh">
+                                <rect key="frame" x="14" y="39" width="282" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzk-UX-hLn">
+                                <rect key="frame" x="14" y="15" width="13" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="4jr-Wq-KPA"/>
+                                    <constraint firstAttribute="width" constant="13" id="skr-El-RYO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="910950 1"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgP-sQ-d50">
+                                <rect key="frame" x="270.5" y="13" width="25.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 1" translatesAutoresizingMaskIntoConstraints="NO" id="IAh-ma-2tM">
+                                <rect key="frame" x="248.5" y="12" width="19" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="gPk-kd-c9h"/>
+                                    <constraint firstAttribute="width" constant="19" id="yet-v8-rpv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70962458849999999" green="0.96623402830000005" blue="0.70362275839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IAh-ma-2tM" firstAttribute="top" secondItem="6WO-kw-LI2" secondAttribute="top" constant="12" id="1iW-dO-87x"/>
+                            <constraint firstItem="xgP-sQ-d50" firstAttribute="top" secondItem="6WO-kw-LI2" secondAttribute="top" constant="13" id="7aD-IK-ozG"/>
+                            <constraint firstItem="xgP-sQ-d50" firstAttribute="leading" secondItem="IAh-ma-2tM" secondAttribute="trailing" constant="3" id="Bmr-Qe-dTP"/>
+                            <constraint firstItem="Iab-o2-rNh" firstAttribute="leading" secondItem="6WO-kw-LI2" secondAttribute="leading" constant="14" id="Goi-G7-BsW"/>
+                            <constraint firstAttribute="width" constant="310" id="McM-0j-wWd"/>
+                            <constraint firstAttribute="trailing" secondItem="Iab-o2-rNh" secondAttribute="trailing" constant="14" id="Mff-bF-iaW"/>
+                            <constraint firstItem="Vzk-UX-hLn" firstAttribute="top" secondItem="6WO-kw-LI2" secondAttribute="top" constant="15" id="OFx-tK-Vgl"/>
+                            <constraint firstItem="Iab-o2-rNh" firstAttribute="top" secondItem="xgP-sQ-d50" secondAttribute="bottom" constant="9" id="ogy-EX-7VI"/>
+                            <constraint firstAttribute="trailing" secondItem="xgP-sQ-d50" secondAttribute="trailing" constant="14" id="siG-i4-xph"/>
+                            <constraint firstItem="Vzk-UX-hLn" firstAttribute="leading" secondItem="6WO-kw-LI2" secondAttribute="leading" constant="14" id="zWa-FN-1B3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="6WO-kw-LI2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="265-T6-g2O"/>
+                    <constraint firstAttribute="trailing" secondItem="6WO-kw-LI2" secondAttribute="trailing" id="4oQ-ok-8SQ"/>
+                    <constraint firstAttribute="bottom" secondItem="6WO-kw-LI2" secondAttribute="bottom" constant="10" id="rBt-0K-bPh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bgView" destination="6WO-kw-LI2" id="I3n-9u-4ri"/>
+                <outlet property="youMsgLabel" destination="Iab-o2-rNh" id="gUt-Jo-96P"/>
+            </connections>
+            <point key="canvasLocation" x="171.01449275362319" y="95.089285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="910950 1" width="13" height="13"/>
+        <image name="Ellipse 1" width="15" height="17"/>
+    </resources>
+</document>
